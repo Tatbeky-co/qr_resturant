@@ -20,10 +20,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     print(Uri.base.queryParameters['id']);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+
       ),
       home: FutureBuilder(
         future: DioApi.getData(url: Const.getRestrantLink+Uri.base.queryParameters['id'].toString()),

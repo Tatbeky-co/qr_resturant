@@ -9,7 +9,7 @@ class MainModel {
   List<String> maincategory = [];
   MainModel({required this.name,required this.subcategory ,required this.maincategory});
   MainModel.fromJson(json) {
-    name = json['name'];
+    name = json['titleName'];
     phone = json['phone'];
     profileimg = json['profileimg'];
     mainColor = Color(int.parse(json['mainColor']!.replaceAll("#", "0xff")));

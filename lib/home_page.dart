@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:qr_resturant/main.dart';
 
 import 'main_model.dart';
 
@@ -160,7 +159,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                                               SizedBox(
                                                 height: 5,
                                               ),
-                                              Expanded(child: Text( model.des.toString() * 20)),
+                                              Expanded(child: Text( model.des.toString() * 10)),
                                               Text(
                                                 model.price.toString()+" SYR",
                                                 style: TextStyle(fontSize: 18),
